@@ -1,4 +1,4 @@
-package Lesson10SearchSortInsert;
+package Lesson10Search;
 
 public class SearchEx1 {
 

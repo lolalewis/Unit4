@@ -1,5 +1,4 @@
-package Lesson10SearchSortInsert;
-
+package Lesson10Sort;
 
 public class ISSStudent implements Comparable{
     private String name,address;
@@ -19,11 +18,15 @@ public class ISSStudent implements Comparable{
     public int getID(){
         return id;
     }
+    
+    public String getName(){
+        return name;
+    }
 
     @Override
     public int compareTo(Object t) {
-      int otherid = ((ISSStudent)t).getID();
-      return id - otherid;
+      String  othername = ((ISSStudent)t).getName();
+      return name.compareTo(othername);
     }
     
 }

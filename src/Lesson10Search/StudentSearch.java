@@ -1,4 +1,4 @@
-package Lesson10SearchSortInsert;
+package Lesson10Search;
 
 import java.io.File;
 import java.io.FileNotFoundException;
