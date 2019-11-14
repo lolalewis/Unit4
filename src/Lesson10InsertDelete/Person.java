@@ -21,6 +21,7 @@ public class Person implements Comparable {
 
     @Override
     public int compareTo(Object t) {
-        //String other name = ((Person)t).getName(;
+        String othername = ((Person)t).getName();
+        return name.compareTo(othername);
     }
 }
