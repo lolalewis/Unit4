@@ -42,10 +42,10 @@ public class StudentSearch2 extends javax.swing.JFrame {
 
         jTextField1 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtarea = new javax.swing.JTextArea();
         btnclear = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        searchbtn = new javax.swing.JButton();
+        txtid = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         jTextField1.setText("jTextField1");
@@ -54,9 +54,9 @@ public class StudentSearch2 extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(500, 400));
         getContentPane().setLayout(null);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtarea.setColumns(20);
+        txtarea.setRows(5);
+        jScrollPane1.setViewportView(txtarea);
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(50, 120, 350, 150);
@@ -65,11 +65,11 @@ public class StudentSearch2 extends javax.swing.JFrame {
         getContentPane().add(btnclear);
         btnclear.setBounds(230, 80, 70, 23);
 
-        jButton1.setText("Search");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(140, 80, 70, 23);
-        getContentPane().add(jTextField2);
-        jTextField2.setBounds(140, 50, 160, 20);
+        searchbtn.setText("Search");
+        getContentPane().add(searchbtn);
+        searchbtn.setBounds(140, 80, 70, 23);
+        getContentPane().add(txtid);
+        txtid.setBounds(140, 50, 160, 20);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lesson10Search/45760598514_3da4c18fa7_b.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -116,11 +116,11 @@ public class StudentSearch2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnclear;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton searchbtn;
+    private javax.swing.JTextArea txtarea;
+    private javax.swing.JTextField txtid;
     // End of variables declaration//GEN-END:variables
 }
