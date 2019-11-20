@@ -14,6 +14,14 @@ public class Person implements Comparable {
     public String getName(){
         return name;
     }
+    
+    public int getAge(){
+        return age;
+    }
+    public String getGender(){
+        return gender;
+    }
+    
     public String toString(){
         //Bob: age 12, male
         return name+ ": age " + "," + gender;
