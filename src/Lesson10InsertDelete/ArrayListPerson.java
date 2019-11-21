@@ -11,7 +11,7 @@ public class ArrayListPerson {
       .add(loc,item) -adds item to specific location
     
       
-      .get()- retrieves a CPY of the item
+      .get()- retrieves a COPY of the item
       .indexOf(item) - shows location of item in array list
       .set(loc,item)- set loc to new item
       .size()- number of items in list

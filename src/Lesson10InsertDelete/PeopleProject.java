@@ -9,8 +9,7 @@ public class PeopleProject extends javax.swing.JFrame {
   
    ArrayList<Person> people = new ArrayList();
    DefaultListModel list = new DefaultListModel();
-     
-    
+       
     public PeopleProject() {
         initComponents();
         people.add(new Person("Bob","M",25));
@@ -30,7 +29,6 @@ public class PeopleProject extends javax.swing.JFrame {
         else
             optfemale.setSelected(true);
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,7 +53,7 @@ public class PeopleProject extends javax.swing.JFrame {
         mnuexit = new javax.swing.JMenuItem();
         add = new javax.swing.JMenu();
         clear = new javax.swing.JMenuItem();
-        addd = new javax.swing.JMenuItem();
+        Add = new javax.swing.JMenuItem();
         delete = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         showAll = new javax.swing.JMenuItem();
@@ -142,14 +140,14 @@ public class PeopleProject extends javax.swing.JFrame {
         });
         add.add(clear);
 
-        addd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lesson10InsertDelete/insert.png"))); // NOI18N
-        addd.setText("Add");
-        addd.addActionListener(new java.awt.event.ActionListener() {
+        Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lesson10InsertDelete/insert.png"))); // NOI18N
+        Add.setText("Add");
+        Add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adddActionPerformed(evt);
+                AddActionPerformed(evt);
             }
         });
-        add.add(addd);
+        add.add(Add);
 
         delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lesson10InsertDelete/delete.png"))); // NOI18N
         delete.setText("Delete");
@@ -223,7 +221,7 @@ public class PeopleProject extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
@@ -233,9 +231,9 @@ public class PeopleProject extends javax.swing.JFrame {
        System.exit(0);
     }//GEN-LAST:event_mnuexitActionPerformed
 
-    private void adddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adddActionPerformed
+    private void AddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddActionPerformed
        
-    }//GEN-LAST:event_adddActionPerformed
+    }//GEN-LAST:event_AddActionPerformed
 
     private void MaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaleActionPerformed
         // TODO add your handling code here:
@@ -346,10 +344,10 @@ public class PeopleProject extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem Add;
     private javax.swing.JMenuItem Female;
     private javax.swing.JMenuItem Male;
     private javax.swing.JMenu add;
-    private javax.swing.JMenuItem addd;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JMenuItem clear;
     private javax.swing.JMenuItem delete;
