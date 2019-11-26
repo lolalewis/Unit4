@@ -15,7 +15,7 @@ public class SortNums {
 
         //selectionSort(nums);
         // bubbleSort(nums);
-        insertionSort(nums);
+        //insertionSort(nums);
         System.out.println("\n\n------------Selection Sort-----------\n\n");
         for (int i = 0; i < 100; i++) {
             if (i % 20 == 0 && i != 0) {
@@ -99,6 +99,28 @@ public class SortNums {
                 a[j + 1] = itemToInsert;
             }//end while
         }//end for
+    
+      
     }//end method
-
+   public static void quickSort(int [] a, int left, int right){
+       if ( left >= right) return;
+       
+       int i = left;
+       int j = right;
+       int pivotValue = a[(left + right) /2];
+       while(i<j){
+           while(a[i]< pivotValue) i++;
+           while(pivotValue < a[j]) j--;
+           if( i<=j){
+               int temp = a[i];
+               a[i] = a[j];
+               a[j] = temp;
+               i++;
+               j--;
+           }
+       }
+           quickSort (a, left, j);
+           quickSort (a, i, right);
+           
+}
 }
